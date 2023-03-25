@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <title>English Study</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <img src="img/3.png" alt="Ustawienia" class="settings">
+    <header class="radio">
+        <div class="box">
+            <img src="img/2.png" alt="ikona radia" class="radio__img">
+            <a href="https://internetradiouk.com/?_gl=1*1hwpl5t*_ga*OTMwMjExODc0LjE2Nzg4OTc4NjA.*_ga_0M8S7FSMVJ*MTY3OTUwMjAzOC4zLjAuMTY3OTUwMjAzOC4wLjAuMA..#choice-london"
+                class="radio__btn">Link do strony</a>
+        </div>
+        <div class="box">
+            <img src="img/1.png" alt="ikona yt" class="radio__img--special ">
+            <a href="https://www.youtube.com/watch?v=78FpZVVEpk8" class="radio__btn">Link do strony</a>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="animation">
+            <div class="pasek"></div>
+            <div class="square"></div>
+            <div class="pasek"></div>
+        </div>
+
+        <section class="audio">
+            <div class="card">
+                <h3 class="card__title">Lekcja 1</h3>
+                <audio src="music/01.mp3" controls></audio>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Lekcja 2</h3>
+                <audio src="music/02.mp3" controls></audio>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Lekcja 3</h3>
+                <audio src="music/03.mp3" controls></audio>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Lekcja 4</h3>
+                <audio src="music/04.mp3" controls></audio>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Lekcja 5</h3>
+                <audio src="music/05.mp3" controls></audio>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Lekcja 6</h3>
+                <audio src="music/06.mp3" controls></audio>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Lekcja 7</h3>
+                <audio src="music/07.mp3" controls></audio>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Lekcja 8</h3>
+                <audio src="music/08.mp3" controls></audio>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Lekcja 9</h3>
+                <audio src="music/09.mp3" controls></audio>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Lekcja 10</h3>
+                <audio src="music/10.mp3" controls></audio>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Lekcja 11</h3>
+                <audio src="music/11.mp3" controls></audio>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Lekcja 12</h3>
+                <audio src="music/12.mp3" controls></audio>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Lekcja 13</h3>
+                <audio src="music/13.mp3" controls></audio>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Lekcja 14</h3>
+                <audio src="music/14.mp3" controls></audio>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Lekcja 15</h3>
+                <audio src="music/15.mp3" controls></audio>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Lekcja 16</h3>
+                <audio src="music/16.mp3" controls></audio>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Lekcja 17</h3>
+                <audio src="music/17.mp3" controls></audio>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Lekcja 18</h3>
+                <audio src="music/18.mp3" controls></audio>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Lekcja 19</h3>
+                <audio src="music/19.mp3" controls></audio>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Lekcja 20</h3>
+                <audio src="music/20.mp3" controls></audio>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <script>
+        const setting = document.querySelector('.settings');
+        let root = document.documentElement;
+
+        const changeColor = () => {
+            setting.classList.toggle('dark')
+
+            if (setting.classList.contains('dark')) {
+                root.style.setProperty('--main-color', '#102964');
+                root.style.setProperty('--pure-white', '#464444');
+                root.style.setProperty('--dark-white', '#233724');
+                root.style.setProperty('--dark', '#be1919');
+                root.style.setProperty('--blue-gradient', 'linear-gradient(45deg, rgb(43, 43, 46), rgb(17, 16, 16))');
+            } else {
+                root.style.setProperty('--main-color', '#1755e7');
+                root.style.setProperty('--pure-white', '#fff');
+                root.style.setProperty('--dark-white', '#eee');
+                root.style.setProperty('--dark', '#2e2e2e');
+                root.style.setProperty('--blue-gradient', 'linear-gradient(45deg, rgb(20, 105, 241), rgb(42, 10, 184))');
+            }
+        }
+
+        setting.addEventListener('click', changeColor)
+    </script>
+</body>
+
+</html>

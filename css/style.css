@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+:root {
+	--main-color: #1755e7;
+	--pure-white: #fff;
+	--dark-white: #eee;
+	--dark: #2e2e2e;
+	--blue-gradient: linear-gradient(45deg, rgb(20, 105, 241), rgb(42, 10, 184));
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.8rem;
+	background-image: var(--blue-gradient);
+}
+
+.settings {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	width: 70px;
+	background-color: var(--pure-white);
+	border-radius: 8px;
+	transition: background-color 0.3s;
+	cursor: pointer;
+}
+.settings:hover {
+	background-color: var(--dark);
+}
+
+.radio {
+	margin-top: 2em;
+	padding: 1.6em 0;
+}
+.radio .box {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.radio__img {
+	width: 140px;
+}
+.radio__img--special {
+	width: 111px;
+	margin-right: 1em;
+}
+.radio__btn {
+	padding: 0.6em 1.4em;
+	color: var(--main-color);
+	background-color: var(--pure-white);
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.3s;
+	cursor: pointer;
+}
+.radio__btn:hover {
+	color: var(--dark);
+}
+
+.audio {
+	padding: 1.6em;
+}
+.audio .card {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 1em;
+	margin-bottom: 1.2em;
+	box-shadow: 0 0 5px var(--dark);
+	background-color: var(--dark-white);
+	border-radius: 5px;
+}
+.audio .card__title {
+	margin-bottom: 0.4em;
+}
+.audio .card audio {
+	transform: translateX(-6%);
+}
+.audio .card audio::-webkit-media-controls-panel {
+	background-color: var(--dark-white);
+}
+
+.animation {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.animation .square {
+	width: 30px;
+	height: 30px;
+	background-color: var(--dark-white);
+	margin: 0 1em;
+}
+.animation .pasek {
+	height: 5px;
+	width: 7em;
+	background-color: var(--pure-white);
+	border-radius: 8px;
+}
+
+@media (min-width: 576px) {
+	.radio {
+		margin-top: 0;
+	}
+	.radio__img {
+		width: 200px;
+	}
+	.radio__img--special {
+		width: 160px;
+		margin-right: 2em;
+	}
+	.radio__btn {
+		font-size: 2.2rem;
+	}
+}
